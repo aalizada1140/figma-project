@@ -1,0 +1,262 @@
+.container{
+    background-color: white;
+    width: 1440px;
+    height: 950px;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.contents{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  fill: white;
+  filter: drop-shadow(1px 1px 15px rgba(0, 0, 0, 0.25));
+  /* width: 80%; */
+  /* align-items: center; */
+  justify-content: center;
+  position:absolute;
+}
+h1{
+    padding-top: 50px;
+    padding-bottom: 70px;
+    padding-left: 120px;
+}
+h4{
+    font-size: 25px;
+}
+p{
+    font-size: 20px;
+}
+/* -----------------------CONTENT BOXLAR---------------- */
+.one{
+    width:20%;
+    height:50%;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin-right: 25px;
+    margin-bottom: 30px;
+}
+.two{
+    width:20%;
+    height:50%;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin-right: 25px;
+    /* margin-bottom: 10px; */
+}
+.three{
+    width:20%;
+    height:50%;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin-right: 25px;
+    /* margin-bottom: 10px; */
+}
+.four{
+    width:20%;
+    height:50%;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 20px;
+    /* margin-right: 25px;  */
+    
+}
+.five{
+    width:20%;
+    height:50%;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin-right: 25px; 
+}
+.six{
+    width:20%;
+    height:50%;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin-right: 25px; 
+}
+.seven{
+    width:20%;
+    height:50%;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin-right: 25px; 
+}
+.eight{
+    width:20%;
+    height:50%;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 20px;
+    /* margin-right: 25px;  */
+}
+h4, p{
+    margin-left: 15px;
+}
+.eight h4{
+    /* margin-top: 0%; */
+padding-bottom: 2px;
+}
+
+/* ----------------------------SEKILLER------------------------- */
+/* .no1{
+    width:100%;
+    height:45%;
+} */
+img{
+    width: 100%;
+    height: 45%;
+}
+/* --------------------Adaptivlik--------------------------- */
+@media (min-width: 1200px){
+.container{
+    width:100%;
+}
+.contents{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+.one, .two, .three, .four, .five, .six, .seven, .eight{
+    width: 22%;
+    height:47%;
+    border-radius: 20px; 
+    margin:15px ;
+}
+h4{
+    font-size: 20px;
+}
+p{
+    font-size: 18px;
+}
+}
+@media (max-width: 1200px){
+    .container{
+        width:90%;
+        height: 90%;
+    } 
+    .contents{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+    }
+    .one, .two, .three, .four, .five, .six, .seven, .eight{
+        width: 25%;
+        height:47%;
+        border-radius: 15px; 
+        margin:15px ;
+   }
+    h4{
+        font-size: 20px;
+    }
+    /* .no8 h4{
+        padding-bottom: 0%;
+    } */
+    p{
+        font-size: 18px;
+    }
+}
+@media (max-width:960px){
+    .container{
+        width:90%;
+        height: 90%;
+    }
+    .contents{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+    }
+    .one, .two, .three, .four, .five, .six, .seven, .eight{
+        width: 25%;
+        height:47%;
+        border-radius: 15px; 
+        margin:15px ;
+   }
+    h4{
+        font-size: 18px;
+    }
+    p{
+        font-size: 15px;
+    }
+}
+@media (max-width:640px){
+    .container{
+        width:80%;
+        height: 80%;
+    }
+    .contents{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        align-items: center;
+    }
+    /* .one, .two, .three, .four, .five, .six, .seven{
+        margin-bottom: 15px;
+      
+        display: flex;
+        flex-direction: column;
+    } */
+    .one, .two, .three, .four, .five, .six, .seven, .eight{
+         width: 50%;
+         height: 50%;
+         border-radius: 15px; 
+         margin:15px ;
+    }
+    h1{
+        font-size: 30px;
+        /* display:flex;
+        justify-content: space-around; */
+    }
+    h4{
+        font-size: 18px;
+    }
+    p{
+        font-size: 13px;
+    }
+}
+@media (max-width:480px){
+    .container{
+        width:80%;
+    }
+    .contents{
+        display:flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+        position: absolute;
+       
+    }
+    .one, .two, .three, .four, .five, .six, .seven{
+        margin-bottom: 15px;
+      
+        /* display: flex;
+        flex-direction: column; */
+    }
+    .one, .two, .three, .four, .five, .six, .seven, .eight{
+         width: 38%;
+         height:40%;
+         border-radius: 10px; 
+         margin:15px ;
+    }
+    h4{
+        font-size: 10px;
+        /* display: flex; */
+        /* position: absolute; */
+        /* align-items: center; */
+    }
+    p{
+        font-size: 8px;
+    }
+}
